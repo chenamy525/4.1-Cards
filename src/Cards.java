@@ -1,17 +1,35 @@
 
 public class Cards {
+	
 
-	public static void main(String[] args) {
-		
-
+	private String rank;
+	private String suit;
+	private int pointValue;
+	
+	
+	public String getRank () {
+		return rank;
 	}
 	
-	public Deck (String[] rank, String[] suit, int[] value) {
-		for (int i = 0; i< rank.length; i++) {
-			for (int j = 0; j < suit.length; j++) {
-				unDealt.add(new card(rank[i], suit[j], value[i]));
-			}
-		}
+	public String getSuit() {
+		return suit;
 	}
+	
+	public int getPointValue() {
+		return pointValue;
+	}
+	
+	public boolean equals (Cards otherCard) {
+		if (pointValue == otherCard.getPointValue()) {
+			return true;
+		}
+		return false;
+	}
+	
+	public String toString() {
+		return ""; //ahh
+	}
+	
+	
 
 }
