@@ -32,7 +32,7 @@ public class Cards {
 	}
 	
 	public String toString() {
-		return ""; //ahh
+		return "Card: " + rank + " of " + suit + " worth " + pointValue;
 	}
 	
 	
